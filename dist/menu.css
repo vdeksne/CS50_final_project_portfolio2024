@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;600;800;900&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: "Prompt", sans-serif;
+    background-color: #ffffff;
+    /* height: 5000px; */
+    padding-top: 60px; 
+}
+
+.header {
+    background-color: #46F896;
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    z-index: 10;
+}
+
+.header__content {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    min-height: 60px;
+}
+
+.logo {
+    color: black;
+    font-size: 23px;
+    letter-spacing: -1px;
+    font-weight: 900;
+}
+
+.nav {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 40px;
+}
+
+/* .nav__item {
+
+} */
+
+.nav__link {
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+    transition: all 0.4s;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.hamburger {
+    display: none; 
+    cursor: pointer; 
+}
+
+.bar {
+    height: 2px;
+    width: 27px; 
+    background: black;
+    margin: 5px 0;
+    opacity: 0.8; 
+    transition: all 0.3s ease-in-out;
+}
+
+.nav--open {
+    transform: translate(0) !important; 
+}
+
+.hamburger--open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+
+}
+
+.hamburger--open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger--open .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.logo img {
+    width: 55%;
+    display: flex;
+}
+
+@media (max-width: 1920px) {
+    .nav {
+        position: fixed; 
+        top: 60px; 
+        left: 0;
+        background-color: #46F896;
+        width: 100%;
+        padding: 10px 0 25px; 
+        transform: translateX(-100%) 
+        /* this is where the nav bar disappears by removing and applying transfor:translateX so we add JS */
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .nav_link {
+        font-size: 40px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

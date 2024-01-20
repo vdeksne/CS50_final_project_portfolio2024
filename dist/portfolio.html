@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="main.css">
+
+
+    <link rel="stylesheet" href="menu.css">
+
+
+
+    <script src="menu.js" defer></script>
+    <script src="portfolio.js"></script>
+    <script src="test.js" defer></script>
+    <!-- <script src="portfolio.js" defer></script> -->
+
+    <script>
+
+// window.onload = function (){
+// const images =
+// document.getElementsByTagName("img");
+// for(var x=1; x < images.length; x++) {
+//     images[x].addEventListener('click', function(){
+//         let loc = this.src;
+
+//         document.getElementById('featureImg2').src = loc;
+//     });
+// }
+// }
+
+        window.onload = function (){
+    const images =
+    document.getElementsByTagName("img");
+    for(var x=1; x < images.length; x++) {
+        images[x].addEventListener('click', function(){
+            let loc = this.src;
+
+            document.getElementById('featureImg').src = loc;
+        });
+    }
+}
+
+</script>
+
+<!-- // <script>
+//     window.onload = function (){
+// const images =
+// document.getElementsByTagName("img");
+// for(var x=1; x < images.length; x++) {
+//     images[x].addEventListener('click', function(){
+//         let loc = this.src;
+
+//         document.getElementById('featureImg2').src = loc;
+//     });
+// }
+// }
+// </script> -->
+
+</head>
+
+<body>
+    <div class="container_body--index">
+
+        <header class="header">
+            <div class="header__content">
+                <a href="index.html" class="logo">
+                    <img class="logo_head_desktop" src="../dist/assets/Logo.png" alt="logo">
+                </a>
+    
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link"> HOME </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="portfolio.html" class="nav__link"> PORTFOLIO </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__link"> ABOUT </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="connect.html" class="nav__link"> CONNECT </a>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="shop.html" class="nav__link"> SHOP </a>
+                        </li> -->
+                    </ul>
+                </nav>
+    
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+             </div>
+        </header>
+
+        <!-- <div id="portfolio-header">
+            <h3>Graphic Design</h3>
+            <h3>Web Design</h3>
+            <h3>Motion Design</h3>
+            <h3>Web Development</h3>
+            <h3>Logos</h3>
+            <h3>Email Marketing</h3>
+            <h3>Photography</h3>
+            <h3>Fine Art</h3>
+            <h3>Presentations</h3>
+        </div> -->
+
+        <div class="tabs">
+
+            <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+            <label for="tab1" class="tabs__label">Graphic Design</label>
+    
+            <div class="tabs__content">
+                <div id="feature">
+                    <img id="featureImg" src="../dist/assets/portfolio/v1/1.png"/>
+                </div>
+        
+                <div id="thumbs">
+                    <img src="../dist/assets/portfolio/v1/1.png"/>
+                    <img src="../dist/assets/portfolio/v1/2.png"/>
+                    <img src="../dist/assets/portfolio/v1/3.png"/>
+                    <img src="../dist/assets/portfolio/v1/4.png"/>
+                    <img src="../dist/assets/portfolio/v1/5.png"/>
+                    <img src="../dist/assets/portfolio/v1/6.png"/>
+                    <img src="../dist/assets/portfolio/v1/7.png"/>
+                    <img src="../dist/assets/portfolio/v1/8.png"/>
+                    <img src="../dist/assets/portfolio/v1/9.png"/>
+                    <img src="../dist/assets/portfolio/v1/10.png"/>
+                </div>
+                
+            </div>
+
+            <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+            <label for="tab2" class="tabs__label">Web Design</label>
+            <div class="tabs__content">
+
+                <div class="web-design-images">
+                    <img src="../dist/assets/portfolio/v3/1.png">
+                    <img src="../dist/assets/portfolio/v3/2.png">
+                    <img src="../dist/assets/portfolio/v3/3.png">
+                    <img src="../dist/assets/portfolio/v3/4.png">
+                    <img src="../dist/assets/portfolio/v3/5.png">
+                    <img src="../dist/assets/portfolio/v3/6.png">
+                    <img src="../dist/assets/portfolio/v3/7.png">
+                    <img src="../dist/assets/portfolio/v3/8.png">
+                </div>
+
+            </div>
+
+            <input type="radio" class="tabs__radio" name="tabs-example" id="tab3">
+            <label for="tab3" class="tabs__label">Motion Design</label>
+            <div class="tabs__content">
+                
+                <div class="motion-design-portfolio">
+                    <img src="../dist/assets/portfolio/v4/2.gif">
+                    <img src="../dist/assets/portfolio/v4/1.gif">
+                    <img src="../dist/assets/portfolio/v4/3.gif">
+                    <img src="../dist/assets/portfolio/v4/4.gif">
+                    <img src="../dist/assets/portfolio/v4/5.gif">
+                    <img src="../dist/assets/portfolio/v4/6.gif">
+                </div>
+
+            </div>
+
+            <input type="radio" class="tabs__radio" name="tabs-example" id="tab4">
+            <label for="tab4" class="tabs__label">Web Development</label>
+            <div class="tabs__content">
+               
+                <div class="web-development-portfolio">
+                    <img src="../dist/assets/portfolio/v5/1.png">
+                    <img src="../dist/assets/portfolio/v5/2.png">
+                </div>
+
+            </div>
+
+            <input type="radio" class="tabs__radio" name="tabs-example" id="tab5">
+            <label for="tab5" class="tabs__label">Creative</label>
+
+            <div class="tabs__content">
+
+                <div class="carousel">
+                    <div class="carousel__item">
+
+                            <img src="../dist/assets/portfolio/v2/18.png"/>
+ 
+                    </div>
+                    <div class="carousel__item">
+                        <img src="../dist/assets/portfolio/v2/19.png"/>        
+                    </div>
+
+                        
+                    <div class="carousel__item">
+                        <img src="../dist/assets/portfolio/v2/17.png"/> 
+                    </div>
+                  </div>
+<!-- 
+                <div id="feature2">
+                    <img id="featureImg2" src="../dist/assets/portfolio/v2/17.png"/>
+                </div> -->
+
+                <!-- <div id="thumbs">
+                    <img src="../dist/assets/portfolio/v2/1.png"/>
+                    <img src="../dist/assets/portfolio/v2/2.png"/>
+                    <img src="../dist/assets/portfolio/v2/3.png"/>
+                    <img src="../dist/assets/portfolio/v2/4.png"/>
+                    <img src="../dist/assets/portfolio/v2/5.png"/>
+                    <img src="../dist/assets/portfolio/v2/6.png"/>
+                    <img src="../dist/assets/portfolio/v2/7.png"/>
+                    <img src="../dist/assets/portfolio/v2/8.png"/>
+                    <img src="../dist/assets/portfolio/v2/9.png"/>
+                    <img src="../dist/assets/portfolio/v2/10.png"/>
+                    <img src="../dist/assets/portfolio/v2/11.png"/>
+                    <img src="../dist/assets/portfolio/v2/12.png"/>
+                    <img src="../dist/assets/portfolio/v2/13.png"/>
+                    <img src="../dist/assets/portfolio/v2/14.png"/>
+                    <img src="../dist/assets/portfolio/v2/15.png"/>
+                    <img src="../dist/assets/portfolio/v2/16.png"/>
+                </div> -->
+                
+            </div>
+
+
+            
+        </div>
+
+
+
+
+            <footer class="footer">
+
+                <div class="footer_distribution"> 
+
+                    <div>
+                        <h5>Made by Viktorija Deksne - Copyright2023</h5>
+                    </div>
+
+                    <div>
+                        <a href="https://www.linkedin.com/in/vdeksne/"><img src="../dist/assets/LinkedIn.png" alt="LinkedIn"></a>
+                        <a href="https://www.behance.net/viktorijadeksne"><img src="../dist/assets/Behance.png" alt="Behance"></a>
+                        <a href="https://wa.me/37127266132"><img src="../dist/assets/WhatsApp.png" alt="WhatsApp"></a>
+                    </div>
+
+                </div>
+
+            </footer>
+
+    </div>
+
+
+
+</body>
+</html>

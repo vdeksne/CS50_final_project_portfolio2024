@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+
+    <title>Home</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="infiniteslider.css">
+    <link rel="stylesheet" href="menu.css">
+
+    <script src="menu.js" defer></script>
+    <script src="connect.js" defer></script>
+
+</head>
+
+<body>
+    
+
+        <header class="header">
+            <div class="header__content">
+                <a href="index.html" class="logo">
+                    <img class="logo_head_desktop" src="../dist/assets/Logo.png" alt="logo">
+                </a>
+    
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link"> HOME </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="portfolio.html" class="nav__link"> PORTFOLIO </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__link"> ABOUT </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="connect.html" class="nav__link"> CONNECT </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="shop.html" class="nav__link"> SHOP </a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+             </div>
+        </header>
+
+    <div class="container_body">
+
+        <div class="connect-body">
+
+                <!-- <svg width="1674" height="1688" viewBox="0 0 1674 1688" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1671.77 968.109C1671.7 968.039 1671.64 967.969 1671.57 967.899L1564.48 860.429V26.1C1563.59 19.594 1560.54 13.5772 1555.81 9.02118C1551.08 4.46512 1544.95 1.63578 1538.42 0.98999H135.58C129.747 0.996871 124.156 3.31691 120.031 7.44122C115.907 11.5655 113.587 17.1573 113.58 22.99V857.37L2.34 968.61C2.21938 968.731 2.1087 968.861 2.009 969C1.5234 969.471 1.13774 970.036 0.875045 970.659C0.612346 971.283 0.477993 971.953 0.480003 972.63V1704.09H4.48V974.73L117.52 1037.7L765.69 1398.78L723.66 1430.5L363.15 1702.57L365.56 1705.77L730.3 1430.5L832.7 1353.22C834.152 1352.14 835.916 1351.57 837.723 1351.58C839.531 1351.6 841.285 1352.2 842.72 1353.3L943.75 1430.5L1303.83 1705.64L1306.26 1702.47L950.34 1430.5L907.96 1398.12L1564.48 1032.86L1669.52 974.42V1704.15H1673.52V971.28C1673.52 970.647 1673.36 970.024 1673.05 969.469C1672.75 968.915 1672.31 968.447 1671.77 968.109ZM113.58 1030.93L6.95 971.529H113.58V1030.93ZM113.58 967.529H9.08L113.58 863.029V967.529ZM1556.42 1032.77L904.49 1395.46L845.15 1350.12C843.02 1348.49 840.417 1347.6 837.735 1347.58C835.054 1347.57 832.44 1348.43 830.29 1350.03L769.19 1396.14L117.58 1033.16V22.989C117.582 18.8033 119.043 14.7491 121.712 11.5242C124.38 8.29919 128.089 6.10496 132.2 5.31897C133.313 5.0969 134.445 4.9864 135.58 4.98901H1538.42C1543.19 4.99457 1547.77 6.89276 1551.14 10.2672C1554.52 13.6417 1556.41 18.2168 1556.42 22.989V1032.77ZM1564.48 866.089L1665.56 967.529H1564.48V866.089ZM1564.48 1028.29V971.529H1666.5L1564.48 1028.29Z" fill="black"/>
+                </svg>                 -->
+
+
+
+            <div id="overlay">
+                <form onsubmit="event.preventDefault(); validateForm()">
+
+                    <h1>Connect</h1>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name">
+                    <small class="error"></small>
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Your email">
+                    <small class="error"></small>
+
+                    <label for="message">What are you up to?</label>
+                    <textarea type="text" id="message" placeholder="Your message" rows="6"></textarea>
+                    <small class="error"></small>
+
+                    <div class="center">
+                        <input type="submit" value="Send">
+                        <p id="success"></p>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+
+
+            <!-- </footer> -->
+
+        
+    </div>
+
+    <div class="footer_distribution"> 
+
+        <div>
+        <h5>Made by Viktorija Deksne - Copyright2023</h5>
+        </div>
+
+        <div>
+            <a href="https://www.linkedin.com/in/vdeksne/" target=”_blank”><img src="../dist/assets/LinkedIn.png" alt="LinkedIn"></a>
+            <a href="https://www.behance.net/viktorijadeksne" target=”_blank”><img src="../dist/assets/Behance.png" alt="Behance"></a>
+            <a href="https://wa.me/37127266132" target=”_blank”><img src="../dist/assets/WhatsApp.png" alt="WhatsApp"></a>
+        </div>
+        
+    </div>
+
+
+
+</body>
+</html>
