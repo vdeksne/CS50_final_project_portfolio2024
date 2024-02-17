@@ -1567,7 +1567,7 @@ input[type="submit"] {
 
 .parallax-sec {
     position: relative; 
-    background: #000000;
+    background: transparent;
     padding: 100px; 
     margin-top: -6rem;
 }
