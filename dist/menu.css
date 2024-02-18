@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-    background-color: #46F896;
+    background-color: #11202A;
     position: fixed;
     width: 100%;
     top: 0; 
@@ -59,15 +59,15 @@ body {
 } */
 
 .nav__link {
-    color: black;
+    color: #ffffff;
     font-size: 50px;
-    font-weight: 700;
+    /* font-weight: 700; */
     transition: all 0.4s;
 }
 
 .nav__link:hover,
 .nav__link:focus {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #FF7F57;
 }
 
 .hamburger {
@@ -78,7 +78,7 @@ body {
 .bar {
     height: 2px;
     width: 27px; 
-    background: black;
+    background: #ffffff;
     margin: 5px 0;
     opacity: 0.8; 
     transition: all 0.3s ease-in-out;
@@ -102,8 +102,16 @@ body {
 }
 
 .logo img {
-    width: 55%;
+    width: 10rem;
+    height: auto;
     display: flex;
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 30vw;
+
+    }
 }
 
 @media (max-width: 1920px) {
@@ -111,7 +119,7 @@ body {
         position: fixed; 
         top: 60px; 
         left: 0;
-        background-color: #46F896;
+        background-color: #11202A;
         width: 100%;
         padding: 10px 0 25px; 
         transform: translateX(-100%) 

@@ -297,6 +297,7 @@ h5 {
     font-weight: 300;
     margin: 0;
     margin-top: 1rem;
+    color: #fff;
 }
 
 .footer_logo {
@@ -504,6 +505,10 @@ h5 {
     height: fit-content;
 }
 
+/* #social-icon-1 svg {
+    fill: #fff !important;
+} */
+
 @media (max-width: 480px) {
 
     .education_list {
@@ -536,7 +541,7 @@ h5 {
     .footer-text-2 {
         font-size: 0.7rem; 
         text-align: center;
-
+        color: #fff;
     }
 
     .logo-2 {
@@ -623,9 +628,8 @@ h5 {
     align-items: center;
     padding: 2rem;
     justify-content: space-between;
-    background-color:  #0AFA94;
+    background-color: #11202A;
     margin-top: auto;
-    padding-top: 0;
 }
 
 .footer_distribution img {
@@ -940,16 +944,17 @@ h5 {
 }
 
 .tabs {
-    /* margin: 3rem; */
     display: flex;
     flex-wrap: wrap; 
-    /* max-width: 400px; */
     font-family: "Prompt", sans-serif;
-    font-weight: 700;
     font-size: 1rem;;
     justify-content: space-around;
     gap: 0.5rem;
-    margin-bottom: 1rem;;
+    margin-bottom: 1rem;
+
+    color: #11202A;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
 .tabs__label {
@@ -971,9 +976,10 @@ h5 {
 }
 
 .tabs__radio:checked+.tabs__label {
-    font-weight: bold;
-    background-color: #0AFA94;
-    /* border-bottom: 1px solid #000; */
+    background-color: #11202A;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
 .tabs__radio:checked+.tabs__label+.tabs__content {
@@ -1165,6 +1171,11 @@ input[type="submit"] {
   .button:active {
     transform: translate(0);
     box-shadow: none;
+  }
+
+  .logo-2 svg {
+    width: 4.93725rem;
+    height: 4.18031rem;
   }
 
 @media (max-width: 600px) {
@@ -1547,13 +1558,15 @@ input[type="submit"] {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 #text {
     position: absolute;
-    font-size: 5rem;
+    font-size: 2rem;
     color: #fff;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0, .2);
+    text-shadow: 1px 1px 4px rgb(0, 0, 0, .3);
+    font-weight: normal;
 }
 
 .parallax img {
@@ -1566,20 +1579,30 @@ input[type="submit"] {
 }
 
 .parallax-sec {
-    position: relative; 
+    /* position: absolute;  */
     background: transparent;
-    padding: 100px; 
-    margin-top: -6rem;
+    padding: 1rem; 
+    /* margin-top: -29rem; */
+    width: 70%;
+    color: #11202A;
+    z-index: 1000;
 }
 
 .parallax-sec h2 {
     font-size: 3rem;
-    color: #fff;
     margin-bottom: 1rem;
 }
 
 .parallax-sec p {
     font-size: 1rem;
-    color: #fff;
     font-weight: 300; 
 }
+
+#txt2 {
+    z-index: 100;
+}
+
+/* #earth {
+    position: absolute;
+    bottom: 0;
+} */
